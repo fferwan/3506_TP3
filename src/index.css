@@ -1,1 +1,150 @@
-/* TODO CSS */
+/*****************************
+ * BACKGROUND 
+ *****************************/
+.bg {
+    background-image: url("./media/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+}
+
+.bg-blue {
+    background-color: rgba(53,189,189,0.50);
+    font-weight:bold;
+    text-align: center;
+}
+
+/*****************************
+ * AREA 
+ *****************************/
+.area {
+    background-color: rgba(53,189,189,0.25);
+    border-radius: 15px;
+    box-shadow: 5px 3px 3px rgba(53,189,189,0.15);
+}
+
+#header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+#content {
+    margin-bottom: 50px;
+}
+
+/*****************************
+ * SUB AREA 
+ *****************************/
+#gifts-area {
+    margin: 15px;
+    padding: 15px;
+}
+
+#dwarf-area {
+    margin: 5px;
+    padding: 15px;
+}
+
+#sled-area {
+    margin: 5px;
+    padding: 15px;
+}
+
+/*****************************
+ * GIFT 
+ *****************************/
+ .gift {
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 120px;
+}
+.gift-small {
+    background-image: url("./media/gift-small.png");
+}
+
+.gift-medium {
+    background-image: url("./media/gift-medium.png");
+}
+
+.gift-large {
+    background-image: url("./media/gift-large.png");
+}
+
+/*****************************
+ * DWARF 
+ *****************************/
+.dwarf {
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    height: 200px;
+    width: auto;
+}
+
+.dwarf-working {
+    background-image: url("./media/elfo-working.png"); 
+}
+
+.dwarf-waiting {
+    background-image: url("./media/elfo-waiting.png");
+}
+
+.dwarf-available {
+    background-image: url("./media/elfo-available.png");
+}
+
+
+/*****************************
+ * SLED 
+ *****************************/
+.sled {
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    background-size: contain;
+    height: 250px;
+    scale: 1;
+    width: auto;
+}
+
+.sled-0 {
+    background-image: url("./media/sled-0.png");
+}
+
+.sled-1 {
+    background-image: url("./media/sled-1.png");
+}
+
+.sled-2 {
+    background-image: url("./media/sled-2.png");
+}
+
+.sled-3 {
+    background-image: url("./media/sled-3.png");
+}
+
+.sled-4 {
+    background-image: url("./media/sled-4.png");
+}
+
+
+/*****************************
+ * REINDEER 
+ *****************************/
+.reindeer {
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 250px;
+    scale: 2;
+    width: auto;
+}
+
+.reindeer-anim {
+    background-image: url("./media/reindeer-anim.gif");
+}
+
+.reindeer-hunger {
+    background-image: url("./media/reindeer-hunger.png");
+}
