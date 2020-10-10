@@ -1,7 +1,7 @@
 class Gift {
 
-    constructor(weight, preparingTime) {
-        this.weight = weight
+    constructor(length, preparingTime) {
+        this.length = length
         this.preparingTime = preparingTime
     }
 }
