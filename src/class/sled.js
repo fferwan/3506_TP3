@@ -43,9 +43,9 @@ class Sled {
             let sledClass;
 
             if (this.status === "delivering") {
-                sledClass = "reindeer reindeer-anim";
+                sledClass = "sled sled-delivering";
             } else if (this.status === "hunger") {
-                sledClass = "reindeer reindeer-hunger";
+                sledClass = "sled sled-hunger";
             } else if (this.status === "available" && this.currentLength === 0) {
                 sledClass = "sled sled-0";
             } else if (this.status === "available") {

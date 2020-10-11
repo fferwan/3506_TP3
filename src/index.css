@@ -141,22 +141,10 @@
     background-image: url("./media/sled-4.png");
 }
 
-
-/*****************************
- * REINDEER 
- *****************************/
-
-.reindeer {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    width: auto;
-}
-
-.reindeer-anim {
+.sled-delivering {
     background-image: url("./media/reindeer-anim.gif");
 }
 
-.reindeer-hunger {
+.sled-hunger {
     background-image: url("./media/reindeer-hunger.png");
 }
