@@ -78,19 +78,20 @@ class Sled {
         if (dwarf.status !== "working" && this.status !== "delivering" && this.currentLength > 0) {
             dwarf.statusUpdate("waiting");
             this.statusUpdate("delivering");
-            await axios
-                .post("http://localhost:8081", {
+            try {
+                await axios.post("http://localhost:8081", {
                     gifts: this.gifts
                 })
-                .then(() => {
-                    this.currentLength = 0;
-                    this.gifts = [];
-                    this.statusUpdate("available");
-                })
-                .catch(() => {
-                    this.statusUpdate("hunger");
-                });
-            dwarf.statusUpdate("available");
+                this.currentLength = 0;
+                this.gifts = [];
+                this.statusUpdate("available");
+            }
+            catch (err) {
+                this.statusUpdate("hunger");
+            }
+            finally {
+                dwarf.statusUpdate("available");
+            }
         }
     }
 }

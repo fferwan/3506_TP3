@@ -23,12 +23,12 @@ prefixGiftList.forEach(prefix => {
     document.getElementById(prefix + "-time").innerText = giftFactory(prefix).time / 1000;
 
     // Initializes the onclicklistener on each of the gift preparation buttons
-    document.getElementById(prefix + "-button").addEventListener('click', async () => {
-        await dwarf.prepare(prefix, sled);
+    document.getElementById(prefix + "-button").addEventListener('click', () => {
+        dwarf.prepare(prefix, sled);
     });
 });
 
 // Initializes the onclicklistener on send button
-document.getElementById("sled-button").addEventListener('click', async () => {
-    await sled.send(dwarf);
+document.getElementById("sled-button").addEventListener('click', () => {
+    sled.send(dwarf);
 });
