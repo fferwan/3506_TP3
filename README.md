@@ -1,4 +1,4 @@
-# TP 3
+# TP 3 - The christmas factory
 
 ## Devs:
 
