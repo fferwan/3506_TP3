@@ -10,7 +10,7 @@
 }
 
 .bg-blue {
-    background-color: rgba(53,189,189,0.50);
+    background-color: rgba(57, 214, 214, 0.5);
     font-weight:bold;
     text-align: center;
 }
@@ -18,12 +18,6 @@
 /*****************************
  * AREA 
  *****************************/
-.area {
-    background-color: rgba(53,189,189,0.25);
-    border-radius: 15px;
-    box-shadow: 5px 3px 3px rgba(53,189,189,0.15);
-}
-
 #header {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -96,6 +90,13 @@
     background-image: url("./media/elfo-available.png");
 }
 
+.dwarf-status {
+    padding: 5px 9px 9px 9px;
+    border-radius: 15px;
+    border: 1px solid rgb(58, 172, 238);
+    background-color:  rgb(58, 238, 238);
+    text-align: center;
+}
 
 /*****************************
  * SLED 

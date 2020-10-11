@@ -1,44 +1,34 @@
-// you can import css in your js file!
+// Import css
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
-// If you want to use jquery
-import $ from 'jquery'
-// axios
-import axios from 'axios'
+// Class files
+import Dwarf from './class/dwarf'
+import Sled from './class/sled'
+import giftFactory from './class/gift'
 
-// Src files
-import Dwarf from './dwarf'
-import Sled from './sled'
-import giftFactory from './gift'
-
-// TODO
-
+// Initialize the dwarf and the sled
 const dwarf = new Dwarf()
 const sled = new Sled()
 
-document.getElementById("gift-small-button").addEventListener('click',async() => {
-    if (dwarf.status === 'available') {
-        const gift = giftFactory('gift-small');
-        await dwarf.prepare(gift, sled);
-    }
+
+// List of prefix of id in html
+const prefixGiftList = ["gift-small", "gift-medium","gift-large"];
+
+// Initialization of model values and their onClickListener
+prefixGiftList.forEach(prefix => {
+
+    // Initializes the tables with the model values
+    document.getElementById(prefix + "-length").innerText = giftFactory(prefix).length;
+    document.getElementById(prefix + "-time").innerText = giftFactory(prefix).time / 1000;
+
+    // Initializes the onclicklistener on each of the gift preparation buttons
+    document.getElementById(prefix + "-button").addEventListener('click', async () => {
+        await dwarf.prepare(prefix, sled);
+    });
 });
-document.getElementById("gift-medium-button").addEventListener('click', async () => {
-    if (dwarf.status === 'available') {
-        const gift = giftFactory('gift-medium');
-        await dwarf.prepare(gift, sled);
-    }
-});
-document.getElementById("gift-large-button").addEventListener('click', async () => {
-    if (dwarf.status === 'available') {
-        const gift = giftFactory('gift-large');
-        await dwarf.prepare(gift, sled);
-    }
-});
+
+// Initializes the onclicklistener on send button
 document.getElementById("sled-button").addEventListener('click', async () => {
-    if (dwarf.status === 'available') {
-        dwarf.statusUpdate('waiting');
-        await sled.send();
-        dwarf.statusUpdate('available');
-    }
+    await sled.send(dwarf);
 });
