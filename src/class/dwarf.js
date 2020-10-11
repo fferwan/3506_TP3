@@ -18,9 +18,9 @@ class Dwarf {
      * @param {Sled} sled 
      */
     async prepare(giftID, sled) {
-        if(this.status === "available"){
+        if (this.status === "available") {
             const gift = giftFactory(giftID);
-            if(sled.limitLength >= sled.currentLength + gift.length) {
+            if (sled.limitLength >= sled.currentLength + gift.length) {
                 await this.preparePromise(gift, sled);
             }
         }
@@ -32,7 +32,7 @@ class Dwarf {
      * @param {Gift} gift gift to add
      * @param {Sled} sled sled that will receive the gift
      */
-    preparePromise(gift, sled){
+    preparePromise(gift, sled) {
         return new Promise((resolve, reject) => {
             this.statusUpdate("working");
             setTimeout(() => {
@@ -52,12 +52,12 @@ class Dwarf {
         const statusList = ["available", "working", "waiting"];
 
         // The parameter is correct
-        if(statusList.includes(status)){
+        if (statusList.includes(status)) {
             this.status = status;
             const image = document.getElementById('dwarf-status-img');
             const text = document.getElementById('dwarf-status-text');
-        
-            switch(this.status) {
+
+            switch (this.status) {
                 case 'available':
                     image.className = "dwarf dwarf-available";
                     break;

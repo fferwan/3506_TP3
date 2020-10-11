@@ -13,7 +13,7 @@ const sled = new Sled()
 
 
 // List of prefix of id in html
-const prefixGiftList = ["gift-small", "gift-medium","gift-large"];
+const prefixGiftList = ["gift-small", "gift-medium", "gift-large"];
 
 // Initialization of model values and their onClickListener
 prefixGiftList.forEach(prefix => {

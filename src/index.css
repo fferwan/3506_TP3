@@ -1,23 +1,26 @@
 /*****************************
  * BACKGROUND 
  *****************************/
-.bg {
+
+ .bg {
     background-image: url("./media/bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
     background-size: cover;
 }
 
 .bg-blue {
     background-color: rgba(57, 214, 214, 0.5);
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
 }
+
 
 /*****************************
  * AREA 
  *****************************/
+
 #header {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -29,9 +32,11 @@
     margin-bottom: 50px;
 }
 
+
 /*****************************
  * SUB AREA 
  *****************************/
+
 #gifts-area {
     margin: 15px;
     padding: 15px;
@@ -47,14 +52,17 @@
     padding: 15px;
 }
 
+
 /*****************************
  * GIFT 
  *****************************/
- .gift {
+
+.gift {
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     height: 120px;
 }
+
 .gift-small {
     background-image: url("./media/gift-small.png");
 }
@@ -67,19 +75,21 @@
     background-image: url("./media/gift-large.png");
 }
 
+
 /*****************************
  * DWARF 
  *****************************/
+
 .dwarf {
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     background-size: cover;
     height: 200px;
     width: auto;
 }
 
 .dwarf-working {
-    background-image: url("./media/elfo-working.png"); 
+    background-image: url("./media/elfo-working.png");
 }
 
 .dwarf-waiting {
@@ -94,16 +104,18 @@
     padding: 5px 9px 9px 9px;
     border-radius: 15px;
     border: 1px solid rgb(58, 172, 238);
-    background-color:  rgb(58, 238, 238);
+    background-color: rgb(58, 238, 238);
     text-align: center;
 }
+
 
 /*****************************
  * SLED 
  *****************************/
+
 .sled {
     background-repeat: no-repeat;
-    background-position: bottom; 
+    background-position: bottom;
     background-size: contain;
     height: 250px;
     scale: 1;
@@ -134,9 +146,10 @@
 /*****************************
  * REINDEER 
  *****************************/
+
 .reindeer {
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     height: 250px;
     scale: 2;
     width: auto;

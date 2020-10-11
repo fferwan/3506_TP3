@@ -38,20 +38,17 @@ class Sled {
         const statusList = ["available", "delivering", "hunger"];
 
         // The parameter is correct
-        if(statusList.includes(status)){
+        if (statusList.includes(status)) {
             this.status = status;
             let sledClass;
 
             if (this.status === "delivering") {
                 sledClass = "reindeer reindeer-anim";
-            } 
-            else if (this.status === "hunger") {
+            } else if (this.status === "hunger") {
                 sledClass = "reindeer reindeer-hunger";
-            } 
-            else if (this.status === "available" && this.currentLength === 0) {
+            } else if (this.status === "available" && this.currentLength === 0) {
                 sledClass = "sled sled-0";
-            } 
-            else if (this.status === "available") {
+            } else if (this.status === "available") {
                 const sledLengthStatus = Math.trunc(((100 * this.currentLength) / this.limitLength) / 25);
                 switch (sledLengthStatus) {
                     case 2:
@@ -78,11 +75,13 @@ class Sled {
      * @param {Dwarf} dwarf dwarf who will have to wait for delivery
      */
     async send(dwarf) {
-        if(dwarf.status !== "working" && this.status !== "delivering" && this.currentLength > 0) {
+        if (dwarf.status !== "working" && this.status !== "delivering" && this.currentLength > 0) {
             dwarf.statusUpdate("waiting");
             this.statusUpdate("delivering");
             await axios
-                .post("http://localhost:8081", { gifts: this.gifts })
+                .post("http://localhost:8081", {
+                    gifts: this.gifts
+                })
                 .then(() => {
                     this.currentLength = 0;
                     this.gifts = [];
@@ -95,6 +94,5 @@ class Sled {
         }
     }
 }
-
 
 export default Sled

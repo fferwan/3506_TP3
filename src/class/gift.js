@@ -17,8 +17,8 @@ class Gift {
 /**
  * Class representing a small gift
  */
-class GiftS extends Gift{
-    
+class GiftS extends Gift {
+
     /**
      * Default constructor
      */
@@ -30,21 +30,21 @@ class GiftS extends Gift{
 /**
  * Class representing a medium gift
  */
-class GiftM extends Gift{
+class GiftM extends Gift {
 
     /**
      * Default constructor
      */
     constructor() {
         super(2, 1000);
-    } 
+    }
 }
 
 /**
  * Class representing a large gift
  */
-class GiftL extends Gift{
-    
+class GiftL extends Gift {
+
     /**
      * Default constructor
      */
@@ -59,13 +59,13 @@ class GiftL extends Gift{
  */
 const giftFactory = (id) => {
     switch (id) {
-        case 'gift-small': 
+        case 'gift-small':
             return new GiftS();
-        case 'gift-medium': 
+        case 'gift-medium':
             return new GiftM();
-        case 'gift-large': 
+        case 'gift-large':
             return new GiftL();
-        default: 
+        default:
             return null;
     }
 }
