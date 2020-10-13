@@ -10,8 +10,8 @@ class Model {
     /**
      * Default constructor
      */
-    constructor(){
-        this.gifts = [ 
+    constructor() {
+        this.gifts = [
             giftFactory("gift-small"),
             giftFactory("gift-medium"),
             giftFactory("gift-large")

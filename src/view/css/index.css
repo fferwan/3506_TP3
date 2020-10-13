@@ -2,12 +2,20 @@
  * BACKGROUND 
  *****************************/
 
- .bg {
+.bg {
     background-image: url("../media/bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+ }
+ 
+.bg-snow {
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: url("../media/snow.png") repeat 0px 0px;
+    -webkit-animation: dropFlowParticles 10s linear infinite;
+    -o-animation: dropFlowParticles 10s linear infinite;
+    animation: dropFlowParticles 10s linear infinite;
 }
 
 .bg-blue {
@@ -16,25 +24,19 @@
     text-align: center;
 }
 
+@-webkit-keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 399px; }
+}
+
+@keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 399px; }
+}
+
 
 /*****************************
  * AREA 
- *****************************/
-
-#header {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding: 25px;
-    text-align: center;
-}
-
-#content {
-    margin-bottom: 50px;
-}
-
-
-/*****************************
- * SUB AREA 
  *****************************/
 
 #gifts-area {
@@ -52,6 +54,9 @@
     padding: 15px;
 }
 
+header {
+    text-align: center;
+}
 
 /*****************************
  * GIFT 

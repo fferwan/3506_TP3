@@ -73,7 +73,20 @@ class View {
         document.getElementById(gift.prefix + "-name").innerText = gift.name;
     }
 
-    viewUpdate
+    /**
+     * Updates the view according to the status of music
+     * @param {string} state state of the music
+     */
+    updateAudio(state) {
+        if (state === "off") {
+            document.getElementById("stopAudio").hidden = true;
+            document.getElementById("playAudio").hidden = false;
+        }
+        else {
+            document.getElementById("stopAudio").hidden = false;
+            document.getElementById("playAudio").hidden = true;
+        }
+    }
 
 }
 
