@@ -5,13 +5,16 @@ class Gift {
 
     /**
      * Configurable constructor
-     * @param {int} length weight of the gift
+     * @param {int} weight weight of the gift
      * @param {int} time preparation time in ms
      */
-    constructor(length, time) {
-        this.length = length;
+    constructor(weight, time) {
+        this.weight = weight;
         this.time = time;
+        this.name = "Normal Gift";
+        this.prefix = "normal-gift";
     }
+
 }
 
 /**
@@ -24,6 +27,8 @@ class GiftS extends Gift {
      */
     constructor() {
         super(1, 500);
+        this.name = "Small Gift";
+        this.prefix = "gift-small";
     }
 }
 
@@ -37,6 +42,8 @@ class GiftM extends Gift {
      */
     constructor() {
         super(2, 1000);
+        this.name = "Medium Gift";
+        this.prefix = "gift-medium";
     }
 }
 
@@ -50,6 +57,8 @@ class GiftL extends Gift {
      */
     constructor() {
         super(5, 2000);
+        this.name = "Large Gift";
+        this.prefix = "gift-large";
     }
 }
 
@@ -70,4 +79,4 @@ const giftFactory = (id) => {
     }
 }
 
-export default giftFactory
+export default giftFactory;

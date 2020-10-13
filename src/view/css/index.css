@@ -3,7 +3,7 @@
  *****************************/
 
  .bg {
-    background-image: url("./media/bg.png");
+    background-image: url("../media/bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -64,15 +64,15 @@
 }
 
 .gift-small {
-    background-image: url("./media/gift-small.png");
+    background-image: url("../media/gift-small.png");
 }
 
 .gift-medium {
-    background-image: url("./media/gift-medium.png");
+    background-image: url("../media/gift-medium.png");
 }
 
 .gift-large {
-    background-image: url("./media/gift-large.png");
+    background-image: url("../media/gift-large.png");
 }
 
 
@@ -89,15 +89,15 @@
 }
 
 .dwarf-working {
-    background-image: url("./media/elfo-working.png");
+    background-image: url("../media/elfo-working.png");
 }
 
 .dwarf-waiting {
-    background-image: url("./media/elfo-waiting.png");
+    background-image: url("../media/elfo-waiting.png");
 }
 
 .dwarf-available {
-    background-image: url("./media/elfo-available.png");
+    background-image: url("../media/elfo-available.png");
 }
 
 .dwarf-status {
@@ -122,29 +122,29 @@
 }
 
 .sled-0 {
-    background-image: url("./media/sled-0.png");
+    background-image: url("../media/sled-0.png");
 }
 
 .sled-1 {
-    background-image: url("./media/sled-1.png");
+    background-image: url("../media/sled-1.png");
 }
 
 .sled-2 {
-    background-image: url("./media/sled-2.png");
+    background-image: url("../media/sled-2.png");
 }
 
 .sled-3 {
-    background-image: url("./media/sled-3.png");
+    background-image: url("../media/sled-3.png");
 }
 
 .sled-4 {
-    background-image: url("./media/sled-4.png");
+    background-image: url("../media/sled-4.png");
 }
 
 .sled-delivering {
-    background-image: url("./media/reindeer-anim.gif");
+    background-image: url("../media/reindeer-anim.gif");
 }
 
 .sled-hunger {
-    background-image: url("./media/reindeer-hunger.png");
+    background-image: url("../media/reindeer-hunger.png");
 }
