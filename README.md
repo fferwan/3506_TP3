@@ -3,7 +3,7 @@
 ## Devs:
 
 * Yoan Belhous
-* Erwan Desain
+* Erwan Desaint
 * Bastien Marais
 
 ## Installation:
